@@ -78,6 +78,10 @@ http://localhost:9090/classic/targets
 Navigate to ```http://localhost:9090/classic/graph?```
 and paste ```active_chat_connection``` in expression placeholder
 
+<img src="./assets/redis-uptime.png" width="250" alt="Redis Logo">
+
+
+
 
 How to visualize the metrics in Grafana:
 Open ```http://localhost:3000```
