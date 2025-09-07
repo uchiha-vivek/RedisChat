@@ -78,7 +78,7 @@ http://localhost:9090/classic/targets
 Navigate to ```http://localhost:9090/classic/graph?```
 and paste ```active_chat_connection``` in expression placeholder
 
-<img src="./assets/redis-uptime.png" width="450" height="250" alt="Redis Logo">
+<img src="./assets/redis-uptime.png" width="850" height="350" alt="Redis Logo">
 
 
 
