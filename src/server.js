@@ -10,7 +10,7 @@ const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer);
 
-// Prometheus metrics endpoint
+
 app.get("/metrics", async (req, res) => {
   res.set("Content-Type", register.contentType);
   res.end(await register.metrics());
@@ -23,7 +23,7 @@ io.on("connection", (socket) => {
   socket.on("chatMessage", async (msg) => {
     try {
       message_throughput.inc();
-      // Publish to Redis so multiple servers can share messages
+      
       await redis.publish("chat_channel", JSON.stringify(msg));
       io.emit("chatMessage", msg);
     } catch (err) {
