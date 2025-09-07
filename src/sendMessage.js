@@ -10,5 +10,5 @@ socket.on("chatMessage", (msg) => {
 // Send a message after connecting
 socket.on("connect", () => {
   console.log("Connected as", socket.id);
-  socket.emit("chatMessage", { user: "Bob", text: "Hello from Node.js!" });
+  socket.emit("chatMessage", { user: "chainx1", text: "Linking on Ledger 1" });
 });
