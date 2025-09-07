@@ -91,6 +91,9 @@ Add prometheus as new data source and use the below queries to see the performan
 ```bash
 rate(chat_messages_total[1m])
 ```
+
+<img src="./assets/redis-grafana.png" width="850" height="350" alt="Redis Logo">
+
 Prometheus takes the per-second average increase of the counter over the last 1 minute window.
 
 ```bash
