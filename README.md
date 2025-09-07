@@ -1,8 +1,8 @@
 ## Simple Chat Backend with Redis+Grafana+Prometheus
 
-<p align="center" style="display: flex; justify-content: center; gap: 20px;">
-   <img src="./assets/redis-grapro.png" width="150" alt="Redis Logo">
-   <img src="./assets/redis-pubsub.jpg" width="150" alt="Redis Logo">
+<p align="center" style="display: flex; justify-content: center; gap: 80px;">
+   <img src="./assets/redis-grapro.png" width="250" alt="Redis Logo">
+   <img src="./assets/redis-pubsub.jpg" width="250" alt="Redis Logo">
 </p>
 
 
