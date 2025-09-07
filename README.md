@@ -40,4 +40,33 @@ Emit the message
 npm run queue
 ```
 
+## Configuring Prometheus
 
+Open the prometheus configuration file
+```
+sudo nano /etc/prometheus/prometheus.yml
+```
+
+Add the following configuration there by scrolling to the bottom:
+```bash
+scrape_configs:
+  - job_name: "chat-backend"
+    static_configs:
+      - targets: ["localhost:5000"]
+```
+
+Save file CTRL + S and  Enter, CTRL + X.
+
+Restart the Prometheus
+```bash
+sudo systemctl restart prometheus
+```
+
+Now check the targets
+
+```bash
+http://localhost:9090/classic/targets
+```
+
+How to visualize the metrics in Grafana:
+Open ```http://localhost:3000```
