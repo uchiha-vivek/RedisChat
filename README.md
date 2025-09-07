@@ -101,3 +101,7 @@ increase(chat_messages_total[1m])
 ```
 
 I have used visualization as ```time series```.
+
+
+For Redis concepts , visit to the following repo
+[Redis concepts](https://github.com/uchiha-vivek/Redis-concepts)
