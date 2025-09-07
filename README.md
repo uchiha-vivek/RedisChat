@@ -6,6 +6,11 @@
 </p>
 
 
+### Redis Pub/Sub
+Redis Pub/Sub is a messaging paradigm within the Redis server that enables real-time, one-to-many communication between different components of a distributed system. It operates on a publish-subscribe model, where publishers send messages to specific "channels" without knowing who the recipients are, and subscribers listen to these channels to receive messages they are interested in.
+
+Source: Google
+
 
 The project is real-time chat application built with the following tools:
 
