@@ -15,7 +15,6 @@ app.get("/metrics", async (req, res) => {
   res.set("Content-Type", register.contentType);
   res.end(await register.metrics());
 });
-
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
   connection.inc();
