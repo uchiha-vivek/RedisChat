@@ -68,5 +68,23 @@ Now check the targets
 http://localhost:9090/classic/targets
 ```
 
+
+Navigate to ```http://localhost:9090/classic/graph?```
+and paste ```active_chat_connection``` in expression placeholder
+
+
 How to visualize the metrics in Grafana:
 Open ```http://localhost:3000```
+
+
+Add prometheus as new data source and use the below queries to see the performance
+```bash
+rate(chat_messages_total[1m])
+```
+Prometheus takes the per-second average increase of the counter over the last 1 minute window.
+
+```bash
+increase(chat_messages_total[1m])
+```
+
+I have used visualization as ```time series```.
