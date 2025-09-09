@@ -110,3 +110,40 @@ I have used visualization as ```time series```.
 
 For Redis concepts , visit to the following repo
 [Redis concepts](https://github.com/uchiha-vivek/Redis-concepts)
+
+
+
+### Installing Prometheus and Grafana in windows
+
+
+Here we will use Chocolatey:
+
+
+[Chocolatey Requirements](https://docs.chocolatey.org/en-us/choco/setup/#requirements)
+
+Install with PowerShell.exe
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+Check the version
+```bash
+choco -v
+```
+
+Installing Prometheus
+```bash
+choco install prometheus -y
+```
+
+Installing grafana
+```bash
+choco install grafana -y
+```
+
+
+start the services
+```bash
+net start prometheus
+net start grafana
+```
